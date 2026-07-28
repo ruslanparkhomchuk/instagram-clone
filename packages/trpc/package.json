@@ -1,0 +1,30 @@
+{
+  "name": "@repo/trpc",
+  "version": "1.0.0",
+  "private": true,
+  "exports": {
+    "./router": {
+      "types": "./dist/server/server.d.ts",
+      "require": "./dist/server/server.js",
+      "import": "./dist/server/server.js",
+      "default": "./src/server/server.ts"
+    },
+    "./schemas": {
+      "types": "./dist/schemas/index.d.ts",
+      "require": "./dist/schemas/index.js",
+      "import": "./dist/schemas/index.js",
+      "default": "./src/schemas/index.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "devDependencies": {
+    "typescript": "5.9.2"
+  },
+  "peerDependencies": {
+    "zod": "4.1.3",
+    "@trpc/server": "11.5.0"
+  }
+}
