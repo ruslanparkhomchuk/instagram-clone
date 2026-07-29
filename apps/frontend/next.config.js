@@ -18,7 +18,7 @@ const nextConfig = {
 			},
 			{
 				protocol: "https",
-				hostname: "instagram-clone.s3.us-east-1.amazonaws.com",
+				hostname: "instagram-clone-bucket1.s3.eu-north-1.amazonaws.com",
 			},
 			{
 				protocol: process.env.BACKEND_PROTOCOL,
